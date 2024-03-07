@@ -12,8 +12,8 @@ namespace LexiconExerciseNr3
         private int age;
         private string fName;
         private string lName;
-        private int height;
-        private int weight;
+        private double height;
+        private double weight;
 
         public int Age
         {
@@ -41,7 +41,7 @@ namespace LexiconExerciseNr3
                 }
                 else
                 {
-                    fName = value;
+                    fName = value.ToUpper();
                 }
             }
         }
@@ -56,19 +56,23 @@ namespace LexiconExerciseNr3
                 }
                 else
                 {
-                    lName = value;
+                    lName = value.ToUpper();
                 }
             }
         }
-        public int Height
+        public double Height
         {
             get { return height; }
             set { height = value; }
         }
-        public int Weight
+        public double Weight
         {
             get { return weight; }
             set { weight = value; }
+        }
+        public override string ToString()
+        {
+            return $"First Name: {FName}\nLast Name: {LName}\nAge: {Age}\nHeight: {Height}\nWeight: {Weight}";
         }
 
     }
