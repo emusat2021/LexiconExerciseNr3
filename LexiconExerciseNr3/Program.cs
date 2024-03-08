@@ -59,3 +59,14 @@
         }
     }
 }
+/*
+ *** Answers to F Questions: ***
+ -  3.3.13 F - If I will need to implement a new field or property to all classes that inherit Bird class 
+    then I will implement it in base Bird class.
+    It could be possible to implement the new propertie even in Animal base class for Bird class
+     but I asume that it will be a specific propertie just for birds, so no other animal will need to have it.
+ - 3.3.14 F - If all animals will need to add a new field or property to their classes that inherit Animal class 
+    then I will implement a new field or property in base Animal class;
+-------------------
+
+ */
