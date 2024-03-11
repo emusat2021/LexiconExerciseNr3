@@ -22,9 +22,9 @@ namespace LexiconExerciseNr3
         {
             return "Cracra";
         }
-        public override string Status()
+        public override string Stats()
         {
-             return $"Age: {Age}\nWeight: {Weight}\n Color:{Color}\n WingDiameter: {WingDiameter}";
+            return $"{GetType().Name} (Age: {Age}, Weight: {Weight}, Color:{Color}, WingDiameter: {WingDiameter});";
         }
     }
 }

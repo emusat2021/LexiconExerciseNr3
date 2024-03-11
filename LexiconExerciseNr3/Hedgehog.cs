@@ -22,9 +22,9 @@ namespace LexiconExerciseNr3
         {
             return "Hedydyd";
         }
-        public override string Status()
+        public override string Stats()
         {
-            return $"Age: {Age}\nWeight: {Weight}\n Color:{Color}\n NumberOfSpikes: {NumberOfSpikes}";
+            return $"{GetType().Name} (Age: {Age}, Weight: {Weight}, Color:{Color}, NumberOfSpikes: {NumberOfSpikes});";
         }
     }
 }

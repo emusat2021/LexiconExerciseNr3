@@ -12,19 +12,19 @@ namespace LexiconExerciseNr3
         public override int Weight { get; set; }
         public override string? Color { get; set; }
 
-        public int NumberOfTheeth {  get; set; }
+        public int NumberOfTeeth {  get; set; }
 
-        public Dog(int age, int weight, string? color, int numberOfTheeth) : base(age, weight, color) 
+        public Dog(int age, int weight, string? color, int numberOfTeeth) : base(age, weight, color) 
         {
-            NumberOfTheeth = numberOfTheeth;
+            NumberOfTeeth = numberOfTeeth;
         }
         public override string DoSound()
         {
             return "HamHam";
         }
-        public override string Status()
+        public override string Stats()
         {
-            return $"Age: {Age}\nWeight: {Weight}\n Color:{Color}\n NumberOfTheeth: {NumberOfTheeth}";
+            return $"{GetType().Name} (Age: {Age}, Weight: {Weight}, Color:{Color}, NumberOfTeeth: {NumberOfTeeth});";
         }
     }
 }

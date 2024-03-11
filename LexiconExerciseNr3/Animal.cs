@@ -20,7 +20,8 @@ namespace LexiconExerciseNr3
         }
         public abstract string DoSound();
 
-        public abstract string Status();
+        public abstract string Stats();
+
   
 
 

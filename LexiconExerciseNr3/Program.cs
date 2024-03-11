@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LexiconExerciseNr3
 {
@@ -60,11 +61,12 @@ namespace LexiconExerciseNr3
             Animal dog = new Dog(3, 6, "brown", 20);
             Animal wolf = new Wolf(5, 10, "white", 1);
 
-            List<Animal> animal = new List<Animal>
+            List<Animal> animals = new List<Animal>
             {
                 dog,
                 wolf
             };
+
 
 
         }
