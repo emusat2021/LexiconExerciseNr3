@@ -21,5 +21,9 @@ namespace LexiconExerciseNr3
         {
             return "Shshsh";
         }
+        public override string Status()
+        {
+            return $"Age: {Age}\nWeight: {Weight}\n Color:{Color}\n SegmentCount: {SegmentCount}";
+        }
     }
 }
