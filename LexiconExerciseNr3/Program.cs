@@ -1,4 +1,6 @@
-﻿namespace LexiconExerciseNr3
+﻿using System.Drawing;
+
+namespace LexiconExerciseNr3
 {
     public class Program
     {
@@ -33,7 +35,7 @@
             Console.WriteLine(harry.ToString());
             */
 
-
+            /*
             UserError numericInputError = new NumericInputError();
             UserError textInputError = new TextInputError();
             //från tre egna classer
@@ -54,6 +56,15 @@
             {
                 Console.WriteLine(error.UEMessage());
             }
+            */
+            Animal dog = new Dog(3, 6, "brown", 20);
+            Animal wolf = new Wolf(5, 10, "white", 1);
+
+            List<Animal> animal = new List<Animal>
+            {
+                dog,
+                wolf
+            };
 
 
         }
