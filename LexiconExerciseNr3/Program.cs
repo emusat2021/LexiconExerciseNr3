@@ -66,6 +66,11 @@ namespace LexiconExerciseNr3
                 dog,
                 wolf
             };
+            
+            foreach (Animal animal in animals) 
+            {
+                Console.WriteLine(animal.Stats());
+            }
 
 
 
