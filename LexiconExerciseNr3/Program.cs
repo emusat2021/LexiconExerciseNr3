@@ -120,11 +120,20 @@ namespace LexiconExerciseNr3
             */
 
             //3.4.16
+            /*
             foreach (Animal animal in animals)
             {
                 //Console.WriteLine(animal.Breed());
             }
-            
+            */
+
+            //3.4.18
+            foreach (Animal animal in animals)
+            {
+                //casting
+                Dog newDog = (Dog)animal;
+                newDog.Breed();
+            }
 
 
 
