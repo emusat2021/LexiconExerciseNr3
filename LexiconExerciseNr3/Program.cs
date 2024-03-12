@@ -69,8 +69,7 @@ namespace LexiconExerciseNr3
             
             foreach (Animal animal in animals) 
             {
-                Console.WriteLine(animal.Stats());
-                Console.WriteLine(animal.DoSound());
+                Console.WriteLine($"{animal.Stats()} Sound: {animal.DoSound()};");
             }
 
 
