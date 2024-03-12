@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.ComponentModel.Design;
+using System.Drawing;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LexiconExerciseNr3
@@ -60,16 +61,27 @@ namespace LexiconExerciseNr3
             */
             Animal dog = new Dog(3, 6, "brown", 20);
             Animal wolf = new Wolf(5, 10, "white", 1);
+            Animal wolfman = new Wolfman(30, 75, "multi", 2);
 
             List<Animal> animals = new List<Animal>
             {
                 dog,
-                wolf
+                wolf,
+                wolfman
             };
             
             foreach (Animal animal in animals) 
             {
-                Console.WriteLine($"{animal.Stats()} Sound: {animal.DoSound()};");
+                if (animal is IPerson)
+                {
+                    IPerson newI = (IPerson) animal;
+                    Console.WriteLine(newI.Talk());
+                }
+                else 
+                {
+                    Console.WriteLine($"{animal.Stats()} Sound: {animal.DoSound()};");
+
+                }
             }
 
 

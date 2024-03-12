@@ -14,7 +14,7 @@ namespace LexiconExerciseNr3
 
         public string Talk()
         {
-            return "Let's learn about each other!";
+            return "Let's make persons learn animal's language!";
         }
     }
 }
