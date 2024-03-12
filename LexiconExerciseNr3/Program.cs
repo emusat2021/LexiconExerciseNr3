@@ -60,7 +60,7 @@ namespace LexiconExerciseNr3
             }
             */
 
-            
+            /*
             Animal dog = new Dog(3, 6, "brown", 20);
             Animal wolf = new Wolf(5, 10, "white", 1);
             Animal wolfman = new Wolfman(30, 75, "multi", 2);
@@ -87,7 +87,7 @@ namespace LexiconExerciseNr3
 
                 }
             }
-            
+            */
 
             /*
             //List of dogs:
@@ -97,6 +97,23 @@ namespace LexiconExerciseNr3
                 //horse,
             };
             */
+
+            //3.4.11 - 12  Animal Stats
+            Animal dog = new Dog(3, 6, "brown", 20);
+            Animal wolf = new Wolf(5, 10, "white", 1);
+            Animal wolfman = new Wolfman(30, 75, "multi", 2);
+
+            List<Animal> animals = new List<Animal>
+            {
+                dog,
+                wolf,
+                wolfman
+            };
+
+            foreach (Animal animal in animals)
+            {
+                Console.WriteLine(animal.Stats());
+            }
 
 
         }
@@ -114,6 +131,9 @@ namespace LexiconExerciseNr3
 - 3.4.9 - It is not working adding horse type Horse to a list type Dog. 
            This because there are two separate types even if both are derived from class Animal.
 - 3.4.10 - The list must be Animal type for the both Dog and Horse to be able to be addede on the list.
+- 3.4.13 - Wolfman derived from class Wolf. 
+            Wolfman do not neeed, for example, the packrank property but Wolfman-
+            -inherits the Wolf together with all Wolf's properties.
 
 
 
