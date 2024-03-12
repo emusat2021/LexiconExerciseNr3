@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LexiconExerciseNr3
 {
-    internal class Horse: Animal
+    public class Horse: Animal
     {
         public override int Age { get; set; }
         public override int Weight { get; set; }

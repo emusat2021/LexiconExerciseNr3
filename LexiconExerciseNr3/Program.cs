@@ -59,6 +59,8 @@ namespace LexiconExerciseNr3
                 Console.WriteLine(error.UEMessage());
             }
             */
+
+            /*
             Animal dog = new Dog(3, 6, "brown", 20);
             Animal wolf = new Wolf(5, 10, "white", 1);
             Animal wolfman = new Wolfman(30, 75, "multi", 2);
@@ -83,6 +85,14 @@ namespace LexiconExerciseNr3
 
                 }
             }
+            */
+
+            //List of dogs:
+            Horse horse = new Horse(7, 100, "brown", 40);
+            List<Dog> dogs = new List<Dog>
+            {
+                //horse,
+            };
 
 
 
@@ -91,12 +101,17 @@ namespace LexiconExerciseNr3
 }
 /*
  *** Answers to F Questions: ***
- -  3.3.13 F - If I will need to implement a new field or property to all classes that inherit Bird class 
-    then I will implement it in base Bird class.
-    It could be possible to implement the new propertie even in Animal base class for Bird class
-     but I asume that it will be a specific propertie just for birds, so no other animal will need to have it.
- - 3.3.14 F - If all animals will need to add a new field or property to their classes that inherit Animal class 
-    then I will implement a new field or property in base Animal class;
+ -  3.3.13 F - If I will need to implement a new field or property to all classes that inherit Bird class-
+    -then I will implement it in base Bird class.
+    It could be possible to implement the new propertie even in Animal base class for Bird class-
+     -but I asume that it will be a specific propertie just for birds, so no other animal will need to have it.
+ - 3.3.14 F - If all animals will need to add a new field or property to their classes that inherit Animal class-
+    -then I will implement a new field or property in base Animal class;
 -------------------
+- 3.4.9 - It is not working adding horse type Horse to a list type Dog. 
+           This because there are two separate types even if both are derived from class Animal.
+- 3.4.10 - The list must be Animal type for the both Dog and Horse to be able to be addede on the list.
+
+
 
  */
