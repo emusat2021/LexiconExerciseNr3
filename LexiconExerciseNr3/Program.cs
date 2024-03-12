@@ -76,13 +76,14 @@ namespace LexiconExerciseNr3
             {
                 if (animal is IPerson)
                 {
+                    Console.WriteLine(animal.GetType().Name);
                     IPerson newI = (IPerson) animal;
                     Console.WriteLine(newI.Talk());
                 }
                 else 
                 {
                     Console.WriteLine(animal.GetType().Name);
-                    //Console.WriteLine($"{animal.Stats()} Sound: {animal.DoSound()};");
+                    Console.WriteLine($"{animal.Stats()} Sound: {animal.DoSound()};");
 
                 }
             }
