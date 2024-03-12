@@ -26,5 +26,10 @@ namespace LexiconExerciseNr3
         {
             return $"{GetType().Name} (Age: {Age}, Weight: {Weight}, Color:{Color}, NumberOfTeeth: {NumberOfTeeth});";
         }
+
+        public string Breed()
+        {
+            return "SomeDogBreed";
+        }
     }
 }
