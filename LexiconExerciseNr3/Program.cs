@@ -60,7 +60,7 @@ namespace LexiconExerciseNr3
             }
             */
 
-            /*
+            
             Animal dog = new Dog(3, 6, "brown", 20);
             Animal wolf = new Wolf(5, 10, "white", 1);
             Animal wolfman = new Wolfman(30, 75, "multi", 2);
@@ -81,19 +81,21 @@ namespace LexiconExerciseNr3
                 }
                 else 
                 {
-                    Console.WriteLine($"{animal.Stats()} Sound: {animal.DoSound()};");
+                    Console.WriteLine(animal.GetType().Name);
+                    //Console.WriteLine($"{animal.Stats()} Sound: {animal.DoSound()};");
 
                 }
             }
-            */
+            
 
+            /*
             //List of dogs:
             Horse horse = new Horse(7, 100, "brown", 40);
             List<Dog> dogs = new List<Dog>
             {
                 //horse,
             };
-
+            */
 
 
         }
