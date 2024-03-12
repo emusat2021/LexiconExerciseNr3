@@ -60,7 +60,7 @@ namespace LexiconExerciseNr3
             }
             */
 
-            /*
+            
             Animal dog = new Dog(3, 6, "brown", 20);
             Animal wolf = new Wolf(5, 10, "white", 1);
             Animal wolfman = new Wolfman(30, 75, "multi", 2);
@@ -71,7 +71,7 @@ namespace LexiconExerciseNr3
                 wolf,
                 wolfman
             };
-            
+            /*
             foreach (Animal animal in animals) 
             {
                 if (animal is IPerson)
@@ -98,27 +98,31 @@ namespace LexiconExerciseNr3
             };
             */
 
+
             //3.4.11 - 12  Animal Stats
-            Animal dog = new Dog(3, 6, "brown", 20);
-            Animal wolf = new Wolf(5, 10, "white", 1);
-            Animal wolfman = new Wolfman(30, 75, "multi", 2);
-
-            List<Animal> animals = new List<Animal>
-            {
-                dog,
-                wolf,
-                wolfman
-            };
-
+            /*
             foreach (Animal animal in animals)
             {
                 Console.WriteLine(animal.Stats());
+            }
+            */
+
+
+            //3.4.14
+            foreach (Animal animal in animals)
+            {
+                if (animal is Dog)
+                {
+                    Console.WriteLine(animal.Stats());
+                }
             }
 
 
         }
     }
+
 }
+
 /*
  *** Answers to F Questions: ***
  -  3.3.13 F - If I will need to implement a new field or property to all classes that inherit Bird class-
