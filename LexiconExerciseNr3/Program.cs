@@ -109,6 +109,7 @@ namespace LexiconExerciseNr3
 
 
             //3.4.14
+            /*
             foreach (Animal animal in animals)
             {
                 if (animal is Dog)
@@ -116,6 +117,15 @@ namespace LexiconExerciseNr3
                     Console.WriteLine(animal.Stats());
                 }
             }
+            */
+
+            //3.4.16
+            foreach (Animal animal in animals)
+            {
+                //Console.WriteLine(animal.Breed());
+            }
+            
+
 
 
         }
@@ -138,6 +148,8 @@ namespace LexiconExerciseNr3
 - 3.4.13 - Wolfman derived from class Wolf. 
             Wolfman do not neeed, for example, the packrank property but Wolfman-
             -inherits the Wolf together with all Wolf's properties.
+- 3.4.16 - Animal can not access Breed method of the Dog class because that is Dog that inherit Animal.
+- 3.4.17 - Dog has access to all Animal method but the Animal has no access to Dog separata methods.
 
 
 
